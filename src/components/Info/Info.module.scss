@@ -1,0 +1,36 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.info {
+  position: absolute;
+  top: 20vh;
+  left: 8vw;
+  max-width: 24vw;
+  transition: opacity $transition, transform $transition;
+  transition-duration: 1.3s;
+
+  .logo {
+    @include raleway(900, 3.6);
+    background: linear-gradient(45deg, DarkMagenta, Tomato, Violet);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -ms-background-clip: text;
+    color: transparent;
+  }
+
+  .desc {
+    @include raleway(300, 0.8);
+    opacity: 0.9;
+    transition: transform $transition;
+  }
+
+  &.hidden {
+    transform: translateY(5vh);
+    opacity: 0;
+
+    .desc {
+      transform: translateY(2vh);
+    }
+  }
+}

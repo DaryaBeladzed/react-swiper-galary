@@ -1,0 +1,60 @@
+@import "../../styles/variables";
+
+.swiper {
+  overflow: visible;
+
+  .swiper-wrapper {
+    transition: $transition !important;
+    will-change: transform;
+  }
+
+  .swiper-slide {
+    overflow: hidden;
+
+    .swiper_img {
+      height: 100%;
+      width: 300%;
+      background-size: cover;
+      background-position: center;
+      margin-left: -100%;
+      transition: $transition !important;
+      will-change: transform;
+    }
+  }
+}
+
+.mainSlider {
+  .swiper {
+    transform: rotate(15deg);
+    top: 10vh;
+
+    .swiper-slide {
+      height: 75vh;
+      cursor: pointer;
+
+      &.opened {
+        transform: rotate(-15deg) scale(1.45);
+        z-index: 2;
+        box-shadow: rgb(0 0 0 / 0.75) 0 0 0 1000px;
+      }
+    }
+  }
+}
+
+.bgSlider {
+  pointer-events: none;
+  .swiper {
+    transform: rotate(-20deg);
+    top: -65vh;
+    right: 19vh;
+    z-index: 0;
+    filter: saturate(1000) blur(120px);
+
+    .swiper-slide {
+      height: 100vh;
+      .swiper_img {
+        opacity: 0.3;
+      }
+    }
+  }
+}
