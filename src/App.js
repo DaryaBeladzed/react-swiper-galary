@@ -1,5 +1,4 @@
 import "swiper/css/bundle";
-import "./App.scss";
 import { useState } from "react";
 import Slider from "./components/Slider/Slider";
 import Info from "./components/Info/Info";
