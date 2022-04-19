@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-swiper-galary/static/css/main.77d56670.css",
+    "main.js": "/react-swiper-galary/static/js/main.ffc600c8.js",
+    "index.html": "/react-swiper-galary/index.html",
+    "main.77d56670.css.map": "/react-swiper-galary/static/css/main.77d56670.css.map",
+    "main.ffc600c8.js.map": "/react-swiper-galary/static/js/main.ffc600c8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77d56670.css",
+    "static/js/main.ffc600c8.js"
+  ]
+}
