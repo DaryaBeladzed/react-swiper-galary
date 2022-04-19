@@ -1,5 +1,3 @@
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { FreeMode, Mousewheel, Parallax, Controller } from "swiper";
 import "swiper/css/bundle";
 import "./App.scss";
 import { useState } from "react";
